@@ -10,71 +10,92 @@ import SwiftUI
 
 struct HomeView: View {
     @Binding var showProfile: Bool
+    @Binding var showContent: Bool
+
     @State var showUpdate = false
 
     var body: some View {
-        VStack {
-            HStack {
-                Text("Watching")
-                    .font(.system(size: 28, weight: .bold))
+        ScrollView {
+            VStack {
+                HStack {
+                    Text("Watching")
+                        .font(.system(size: 28, weight: .bold))
 
-                Spacer()
+                    Spacer()
 
-                AvatarView(showProfile: $showProfile)
+                    AvatarView(showProfile: $showProfile)
 
-                Button(action: { self.showUpdate.toggle() }) {
-                    Image(systemName: "bell")
-                        .renderingMode(.original)
-                        .font(.system(size: 16, weight: .medium))
-                        .frame(width: 36, height: 36)
-                        .background(Color.white)
-                        .clipShape(Circle())
-                        .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
-                        .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 10)
-                }
-                .sheet(isPresented: $showUpdate) {
-                    UpdateList()
-                }
-            }
-            .padding(.horizontal)
-            .padding(.leading, 14)
-            .padding(.top, 30)
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                WatchRingsView()
-                    .padding(.horizontal, 30)
-                    .padding(.bottom, 30)
-            }
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 20) {
-                    ForEach(sectionData) { item in
-                        GeometryReader { geometry in
-                            SectionView(section: item)
-                                .rotation3DEffect(Angle(degrees:
-                                    Double(geometry.frame(in: .global).minX - 30) / -20
-                                ), axis: (x: 0, y: 10, z: 0))
-                        }
-                        .frame(width: 275, height: 275)
+                    Button(action: { self.showUpdate.toggle() }) {
+                        Image(systemName: "bell")
+                            .foregroundColor(.primary)
+                            .font(.system(size: 16, weight: .medium))
+                            .frame(width: 36, height: 36)
+                            .background(Color("background3"))
+                            .clipShape(Circle())
+                            .shadow(color: Color.black.opacity(0.1), radius: 1, x: 0, y: 1)
+                            .shadow(color: Color.black.opacity(0.2), radius: 10, x: 0, y: 10)
+                    }
+                    .sheet(isPresented: $showUpdate) {
+                        UpdateList()
                     }
                 }
-                .padding(30)
-                .padding(.bottom, 30)
-            }
+                .padding(.horizontal)
+                .padding(.leading, 14)
+                .padding(.top, 30)
 
-            Spacer()
+                ScrollView(.horizontal, showsIndicators: false) {
+                    WatchRingsView()
+                        .padding(.horizontal, 30)
+                        .padding(.bottom, 30)
+                        .onTapGesture {
+                            self.showContent = true
+                        }
+                }
+
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 20) {
+                        ForEach(sectionData) { item in
+                            GeometryReader { geometry in
+                                SectionView(section: item)
+                                    .rotation3DEffect(Angle(degrees:
+                                        Double(geometry.frame(in: .global).minX - 30) / -20
+                                    ), axis: (x: 0, y: 10, z: 0))
+                            }
+                            .frame(width: 275, height: 275)
+                        }
+                    }
+                    .padding(30)
+                    .padding(.bottom, 30)
+                }
+                .offset(y: -30)
+                HStack {
+                    Text("Courses")
+                        .font(.title).bold()
+                    Spacer()
+                }
+                .padding(.leading, 30)
+                .offset(y: -60)
+
+                SectionView(section: sectionData[2], width: screen.width - 60, height: 275)
+                    .offset(y: -60)
+
+                Spacer()
+            }
+            .frame(width: screen.width)
         }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(showProfile: .constant(false))
+        HomeView(showProfile: .constant(false), showContent: .constant(true))
     }
 }
 
 struct SectionView: View {
     var section: Section
+    var width: CGFloat = 275
+    var height: CGFloat = 275
 
     var body: some View {
         VStack {
@@ -97,7 +118,7 @@ struct SectionView: View {
         }
         .padding(.top, 20)
         .padding(.horizontal, 20)
-        .frame(width: 275, height: 275)
+        .frame(width: width, height: height)
         .background(section.color)
         .cornerRadius(30)
         .shadow(color: section.color.opacity(0.3), radius: 20, x: 0, y: 20)
@@ -133,7 +154,7 @@ struct WatchRingsView: View {
                 }
             }
             .padding(8)
-            .background(Color.white)
+            .background(Color("background3"))
             .cornerRadius(20)
             .modifier(ShadowModifier())
 
@@ -141,7 +162,7 @@ struct WatchRingsView: View {
                 RingView(color1: #colorLiteral(red: 0.7450980544, green: 0.1568627506, blue: 0.07450980693, alpha: 1), color2: #colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1), width: 32, height: 32, percent: 54, show: .constant(true))
             }
             .padding(8)
-            .background(Color.white)
+            .background(Color("background3"))
             .cornerRadius(20)
             .modifier(ShadowModifier())
 
@@ -149,7 +170,7 @@ struct WatchRingsView: View {
                 RingView(color1: #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1), color2: #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1), width: 32, height: 32, percent: 90, show: .constant(true))
             }
             .padding(8)
-            .background(Color.white)
+            .background(Color("background3"))
             .cornerRadius(20)
             .modifier(ShadowModifier())
         }
