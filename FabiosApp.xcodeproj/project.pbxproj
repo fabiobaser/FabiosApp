@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5103D8EE24BA0DCE0031F0D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5103D8ED24BA0DCE0031F0D0 /* GoogleService-Info.plist */; };
 		511DECB424B4896600CBF83E /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511DECB324B4896600CBF83E /* CourseList.swift */; };
 		5138818724B3ECC900193B12 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5138818624B3ECC900193B12 /* Modifiers.swift */; };
+		51505EFD24BA054800632854 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 51505EFC24BA054800632854 /* SwiftPackageProductDependency */; };
+		51505F0124BA05B300632854 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51505F0024BA05B300632854 /* LottieView.swift */; };
+		51505F0324BA072800632854 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51505F0224BA072800632854 /* LoadingView.swift */; };
+		51505F0724BA089400632854 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 51505F0524BA089400632854 /* loading.json */; };
+		51505F0824BA089400632854 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 51505F0624BA089400632854 /* success.json */; };
+		51505F0A24BA093D00632854 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51505F0924BA093D00632854 /* SuccessView.swift */; };
+		5162885D24B9EBC5001D6D34 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5162885C24B9EBC5001D6D34 /* LoginView.swift */; };
 		51C3DCDF24B4A29000208960 /* CourseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C3DCDE24B4A29000208960 /* CourseDetail.swift */; };
 		51C3DCE124B4A71C00208960 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C3DCE024B4A71C00208960 /* Data.swift */; };
 		51C3DCE324B4A8A800208960 /* PostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C3DCE224B4A8A700208960 /* PostList.swift */; };
 		51C3DCE524B4AA5000208960 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C3DCE424B4AA5000208960 /* DataStore.swift */; };
-		51C3DCE824B4BDB900208960 /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = 51C3DCE724B4BDB900208960 /* Contentful */; };
+		51C3DCE824B4BDB900208960 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 51C3DCE724B4BDB900208960 /* SwiftPackageProductDependency */; };
 		51C3DCEA24B4BED700208960 /* CourseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C3DCE924B4BED700208960 /* CourseStore.swift */; };
-		51C3DCED24B4C60C00208960 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 51C3DCEC24B4C60C00208960 /* SDWebImageSwiftUI */; };
+		51C3DCED24B4C60C00208960 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 51C3DCEC24B4C60C00208960 /* SwiftPackageProductDependency */; };
 		51C3DCEF24B4D45000208960 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C3DCEE24B4D45000208960 /* BlurView.swift */; };
 		51E4D1C024B3E35800825392 /* RingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E4D1BF24B3E35800825392 /* RingView.swift */; };
 		51F17F2224B3D4A70022603A /* UpdateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F17F2124B3D4A70022603A /* UpdateList.swift */; };
@@ -31,11 +39,20 @@
 		51FB9C6E24B394F500927F20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FB9C6D24B394F500927F20 /* Assets.xcassets */; };
 		51FB9C7124B394F500927F20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51FB9C7024B394F500927F20 /* Preview Assets.xcassets */; };
 		51FB9C7424B394F500927F20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51FB9C7224B394F500927F20 /* LaunchScreen.storyboard */; };
+		934C0FBAA4D07000A0400348 /* Pods_FabiosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA82BC904B48C4D50DF5B975 /* Pods_FabiosApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2623B9F6DA1FFE1A8C336268 /* Pods-FabiosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FabiosApp.debug.xcconfig"; path = "Target Support Files/Pods-FabiosApp/Pods-FabiosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5103D8ED24BA0DCE0031F0D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		511DECB324B4896600CBF83E /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
 		5138818624B3ECC900193B12 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		51505F0024BA05B300632854 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		51505F0224BA072800632854 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		51505F0524BA089400632854 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		51505F0624BA089400632854 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
+		51505F0924BA093D00632854 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		5162885C24B9EBC5001D6D34 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		51C3DCDE24B4A29000208960 /* CourseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetail.swift; sourceTree = "<group>"; };
 		51C3DCE024B4A71C00208960 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		51C3DCE224B4A8A700208960 /* PostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostList.swift; sourceTree = "<group>"; };
@@ -58,6 +75,8 @@
 		51FB9C7024B394F500927F20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		51FB9C7324B394F500927F20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51FB9C7524B394F500927F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CAE1E24278A56CAAA22DD8C /* Pods-FabiosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FabiosApp.release.xcconfig"; path = "Target Support Files/Pods-FabiosApp/Pods-FabiosApp.release.xcconfig"; sourceTree = "<group>"; };
+		FA82BC904B48C4D50DF5B975 /* Pods_FabiosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FabiosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,19 +84,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51C3DCED24B4C60C00208960 /* SDWebImageSwiftUI in Frameworks */,
-				51C3DCE824B4BDB900208960 /* Contentful in Frameworks */,
+				51C3DCED24B4C60C00208960 /* BuildFile in Frameworks */,
+				51C3DCE824B4BDB900208960 /* BuildFile in Frameworks */,
+				51505EFD24BA054800632854 /* BuildFile in Frameworks */,
+				934C0FBAA4D07000A0400348 /* Pods_FabiosApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B491454AC5938793B8B1208 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA82BC904B48C4D50DF5B975 /* Pods_FabiosApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51505F0424BA089400632854 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				51505F0524BA089400632854 /* loading.json */,
+				51505F0624BA089400632854 /* success.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 		51FB9C5B24B394F400927F20 = {
 			isa = PBXGroup;
 			children = (
 				51FB9C6624B394F400927F20 /* FabiosApp */,
 				51FB9C6524B394F400927F20 /* Products */,
+				A13CF93A534F9D19731925FE /* Pods */,
+				0B491454AC5938793B8B1208 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +155,12 @@
 				51FB9C7224B394F500927F20 /* LaunchScreen.storyboard */,
 				51FB9C7524B394F500927F20 /* Info.plist */,
 				51FB9C6F24B394F500927F20 /* Preview Content */,
+				5162885C24B9EBC5001D6D34 /* LoginView.swift */,
+				51505F0424BA089400632854 /* Lottie */,
+				51505F0024BA05B300632854 /* LottieView.swift */,
+				51505F0224BA072800632854 /* LoadingView.swift */,
+				51505F0924BA093D00632854 /* SuccessView.swift */,
+				5103D8ED24BA0DCE0031F0D0 /* GoogleService-Info.plist */,
 			);
 			path = FabiosApp;
 			sourceTree = "<group>";
@@ -127,6 +173,16 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A13CF93A534F9D19731925FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2623B9F6DA1FFE1A8C336268 /* Pods-FabiosApp.debug.xcconfig */,
+				9CAE1E24278A56CAAA22DD8C /* Pods-FabiosApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51FB9C7824B394F500927F20 /* Build configuration list for PBXNativeTarget "FabiosApp" */;
 			buildPhases = (
+				76BA421BEAB3919AE79F38B9 /* [CP] Check Pods Manifest.lock */,
 				51FB9C6024B394F400927F20 /* Sources */,
 				51FB9C6124B394F400927F20 /* Frameworks */,
 				51FB9C6224B394F400927F20 /* Resources */,
+				CA189A9A139AEAAAE24EC1B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,8 +202,9 @@
 			);
 			name = FabiosApp;
 			packageProductDependencies = (
-				51C3DCE724B4BDB900208960 /* Contentful */,
-				51C3DCEC24B4C60C00208960 /* SDWebImageSwiftUI */,
+				51C3DCE724B4BDB900208960 /* SwiftPackageProductDependency */,
+				51C3DCEC24B4C60C00208960 /* SwiftPackageProductDependency */,
+				51505EFC24BA054800632854 /* SwiftPackageProductDependency */,
 			);
 			productName = FabiosApp;
 			productReference = 51FB9C6424B394F400927F20 /* FabiosApp.app */;
@@ -176,8 +235,9 @@
 			);
 			mainGroup = 51FB9C5B24B394F400927F20;
 			packageReferences = (
-				51C3DCE624B4BDB900208960 /* XCRemoteSwiftPackageReference "contentful.swift" */,
-				51C3DCEB24B4C60C00208960 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				51C3DCE624B4BDB900208960 /* RemoteSwiftPackageReference */,
+				51C3DCEB24B4C60C00208960 /* RemoteSwiftPackageReference */,
+				51505EFB24BA054800632854 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 51FB9C6524B394F400927F20 /* Products */;
 			projectDirPath = "";
@@ -193,13 +253,58 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51505F0824BA089400632854 /* success.json in Resources */,
 				51FB9C7424B394F500927F20 /* LaunchScreen.storyboard in Resources */,
 				51FB9C7124B394F500927F20 /* Preview Assets.xcassets in Resources */,
+				51505F0724BA089400632854 /* loading.json in Resources */,
 				51FB9C6E24B394F500927F20 /* Assets.xcassets in Resources */,
+				5103D8EE24BA0DCE0031F0D0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76BA421BEAB3919AE79F38B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FabiosApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA189A9A139AEAAAE24EC1B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FabiosApp/Pods-FabiosApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FabiosApp/Pods-FabiosApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FabiosApp/Pods-FabiosApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51FB9C6024B394F400927F20 /* Sources */ = {
@@ -209,6 +314,7 @@
 				51FB9C6824B394F400927F20 /* AppDelegate.swift in Sources */,
 				51C3DCE124B4A71C00208960 /* Data.swift in Sources */,
 				51C3DCEA24B4BED700208960 /* CourseStore.swift in Sources */,
+				51505F0324BA072800632854 /* LoadingView.swift in Sources */,
 				51C3DCE524B4AA5000208960 /* DataStore.swift in Sources */,
 				51F17F2624B3DA7F0022603A /* UpdateStore.swift in Sources */,
 				51F17F2224B3D4A70022603A /* UpdateList.swift in Sources */,
@@ -217,6 +323,7 @@
 				51F17F2424B3D83A0022603A /* UpdateDetail.swift in Sources */,
 				51E4D1C024B3E35800825392 /* RingView.swift in Sources */,
 				51F636DB24B3C112006B885F /* Home.swift in Sources */,
+				51505F0124BA05B300632854 /* LottieView.swift in Sources */,
 				51F636DD24B3C87A006B885F /* HomeView.swift in Sources */,
 				51FB9C6A24B394F400927F20 /* SceneDelegate.swift in Sources */,
 				51C3DCE324B4A8A800208960 /* PostList.swift in Sources */,
@@ -224,6 +331,8 @@
 				51C3DCDF24B4A29000208960 /* CourseDetail.swift in Sources */,
 				51C3DCEF24B4D45000208960 /* BlurView.swift in Sources */,
 				51F17F2824B3DDCE0022603A /* TabBar.swift in Sources */,
+				51505F0A24BA093D00632854 /* SuccessView.swift in Sources */,
+				5162885D24B9EBC5001D6D34 /* LoginView.swift in Sources */,
 				511DECB424B4896600CBF83E /* CourseList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,9 +467,11 @@
 		};
 		51FB9C7924B394F500927F20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2623B9F6DA1FFE1A8C336268 /* Pods-FabiosApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"FabiosApp/Preview Content\"";
 				DEVELOPMENT_TEAM = K2CA7PR23N;
 				ENABLE_PREVIEWS = YES;
@@ -378,9 +489,11 @@
 		};
 		51FB9C7A24B394F500927F20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CAE1E24278A56CAAA22DD8C /* Pods-FabiosApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"FabiosApp/Preview Content\"";
 				DEVELOPMENT_TEAM = K2CA7PR23N;
 				ENABLE_PREVIEWS = YES;
@@ -420,7 +533,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		51C3DCE624B4BDB900208960 /* XCRemoteSwiftPackageReference "contentful.swift" */ = {
+		51505EFB24BA054800632854 /* RemoteSwiftPackageReference */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.8;
+			};
+		};
+		51C3DCE624B4BDB900208960 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/contentful/contentful.swift.git";
 			requirement = {
@@ -428,7 +549,7 @@
 				minimumVersion = 5.1.0;
 			};
 		};
-		51C3DCEB24B4C60C00208960 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+		51C3DCEB24B4C60C00208960 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
 			requirement = {
@@ -439,14 +560,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		51C3DCE724B4BDB900208960 /* Contentful */ = {
+		51505EFC24BA054800632854 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 51C3DCE624B4BDB900208960 /* XCRemoteSwiftPackageReference "contentful.swift" */;
+			package = 51505EFB24BA054800632854 /* RemoteSwiftPackageReference */;
+			productName = Lottie;
+		};
+		51C3DCE724B4BDB900208960 /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 51C3DCE624B4BDB900208960 /* RemoteSwiftPackageReference */;
 			productName = Contentful;
 		};
-		51C3DCEC24B4C60C00208960 /* SDWebImageSwiftUI */ = {
+		51C3DCEC24B4C60C00208960 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 51C3DCEB24B4C60C00208960 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			package = 51C3DCEB24B4C60C00208960 /* RemoteSwiftPackageReference */;
 			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
